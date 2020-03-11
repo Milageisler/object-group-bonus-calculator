@@ -1,0 +1,24 @@
+body {
+  background-color: green;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template:
+    "h h h h" 1fr
+    ". b b ." auto
+    ". c d ." 1fr / 15px 1fr 1fr 15px;
+}
+
+.calcHeader {
+  grid-area: h;
+}
+
+.outputArea {
+  grid-area: b;
+  min-height: 50%;
+  background-color: lightgray;
+}
+.outputArea p {
+  line-height: 1.6;
+}

@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Bonus Calculator Object Challenge</title>
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="jQuery.js"></script>
     <script src="client.js" charset="utf-8"></script>
   </head>
   <body>
-    <h1>Bonus Calculator Object Challenge</h1>
+    <div class="mainGrid">
+      <h1 class="calcHeader">Bonus Calculator Object Challenge</h1>
+      <div class="outputArea">
+        <p id="calculatedBonusOutput"></p>
+
+        <button type="button" onclick="clickDiplayButton()">
+          Calculate Bonuses
+        </button>
+      </div>
+    </div>
   </body>
 </html>

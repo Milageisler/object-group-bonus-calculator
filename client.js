@@ -86,3 +86,15 @@ function loopthru() {
     console.log(bonusCalculations(employee));
   }
 }
+
+function clickDiplayButton() {
+  let finalP = "";
+  for (let employee of employees) {
+    let holdPerson = bonusCalculations(employee);
+    finalP +=
+      `${holdPerson.name}     Bonus Percentage: ${holdPerson.bonusPercentage}  Total Compensation: ${holdPerson.totalCompensation}  Total Bonus: ${holdPerson.totalBonus}` +
+      "<br>";
+  }
+  console.log(finalP);
+  $("#calculatedBonusOutput").html(finalP);
+}
